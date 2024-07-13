@@ -15,7 +15,8 @@ const config = {
 			$components: './src/components',
 			$lib: './src/lib',
 			$stores: './src/stores',
-			$utils: './src/utils'
+			$utils: './src/utils',
+			$db: './src/db'
 		},
 		adapter: adapter()
 	}

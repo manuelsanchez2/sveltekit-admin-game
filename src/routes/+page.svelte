@@ -1,24 +1,24 @@
 <script lang="ts">
 	import '../app.css';
-	import { auth, login, isUserAdmin, isUserAuthenticated } from '../stores/auth';
+	import { login } from '../stores/auth';
 	import { goto } from '$app/navigation';
-	import type { UserI } from '../types';
-
-	let user: UserI = {
-		id: 1,
-		name: 'Manuel',
-		role: 'admin',
-		email: 'manusansan22@gmail.com'
-	};
+	import { USERS } from '../db/data';
+	import { onMount } from 'svelte';
 
 	const handleLogin = async () => {
 		try {
-			await login(user, '123456');
-			goto('/dashboard');
+			await login(USERS[0], '123456');
+			goto(`/dashboard?userId=${USERS[0].id}`);
 		} catch (error) {
 			console.error(error);
 		}
 	};
+
+	onMount(() => {
+		if (location.search.includes('logged_out')) {
+			history.replaceState({}, document.title, location.pathname);
+		}
+	});
 </script>
 
 <svelte:head>

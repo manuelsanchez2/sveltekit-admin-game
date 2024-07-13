@@ -31,7 +31,7 @@ If applicable, add screenshots to help explain your problem.
 
 Add any other context about the problem here.
 
-### Person Responsible
+### Acceptance Criteria
 
 | Person Responsible | How to Test |
 | ------------------ | ----------- |

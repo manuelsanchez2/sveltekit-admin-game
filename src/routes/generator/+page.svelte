@@ -1,4 +1,11 @@
 <script>
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		if (location.search.includes('userId')) {
+			history.replaceState({}, document.title, location.pathname);
+		}
+	});
 </script>
 
 <svelte:head>

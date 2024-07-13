@@ -1,13 +1,16 @@
 <script>
 	import '../../app.css';
 	import { goto } from '$app/navigation';
-	import { isUserAuthenticated } from '$stores/auth';
 	import { onMount } from 'svelte';
 
 	import SideNavigation from '$components/side-navigation/SideNavigation.svelte';
+	import { getUserById } from '$db/queries';
+
+	export let data;
+	const user = getUserById(Number(data.userId));
 
 	onMount(() => {
-		if (!isUserAuthenticated()) {
+		if (!data.isLoggedIn) {
 			goto('/');
 		}
 	});
@@ -15,7 +18,7 @@
 
 <div class="app">
 	<main class="px-5 flex flex-col md:flex-row h-screen">
-		<SideNavigation />
+		<SideNavigation {user} />
 
 		<slot />
 	</main>

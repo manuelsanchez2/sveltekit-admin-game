@@ -10,7 +10,7 @@ assignees: ''
 
 As a [role], I want [goal] so that [reason].
 
-### Person Responsible
+### Acceptance Criteria
 
 | Person Responsible | How to Test |
 | ------------------ | ----------- |

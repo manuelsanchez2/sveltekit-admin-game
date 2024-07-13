@@ -1,11 +1,13 @@
-<script>
+<script lang="ts">
+	import type { UserI } from '../../types';
 	import { goto } from '$app/navigation';
-	import { logout, isUserAdmin } from '$stores/auth';
+	import { logout } from '$stores/auth';
+	export let user: UserI = {} as UserI;
 
 	const handleLogout = async () => {
 		try {
 			await logout();
-			goto('/');
+			goto('/?logged_out=true');
 		} catch (error) {
 			console.error(error);
 		}
@@ -32,7 +34,7 @@
 			>
 			<span>Dashboard</span>
 		</a>
-		{#if isUserAdmin()}
+		{#if user.role === 'admin'}
 			<a class="flex items-center gap-2 hover:scale-105 focus:scale-105" href="generator">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
