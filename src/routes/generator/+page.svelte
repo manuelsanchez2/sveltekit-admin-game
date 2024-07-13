@@ -9,12 +9,13 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Generator</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
+<section class="w-full flex flex-col items-center py-20" aria-label="Generate a new game">
 	<h1 class="text-3xl font-bold text-center">Generator</h1>
+	<p>Coming soon...</p>
 </section>
 
 <style>

@@ -16,7 +16,8 @@ const config = {
 			$lib: './src/lib',
 			$stores: './src/stores',
 			$utils: './src/utils',
-			$db: './src/db'
+			$db: './src/db',
+			$utils: './src/utils'
 		},
 		adapter: adapter()
 	}

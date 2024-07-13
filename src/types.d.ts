@@ -10,3 +10,10 @@ export interface AuthState {
 	user: UserI | null;
 	token: string | null;
 }
+
+export interface GameI {
+	id: number;
+	name: string;
+	publishedAt: string;
+	isActive: boolean;
+}

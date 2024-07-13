@@ -2,7 +2,9 @@
 	import type { UserI } from '../../types';
 	import { goto } from '$app/navigation';
 	import { logout } from '$stores/auth';
+	import { onMount } from 'svelte';
 	export let user: UserI = {} as UserI;
+	let path = '';
 
 	const handleLogout = async () => {
 		try {
@@ -12,11 +14,22 @@
 			console.error(error);
 		}
 	};
+
+	onMount(() => {
+		path = window.location.pathname;
+	});
+
+	$: console.log('Reactive path:', path);
 </script>
 
-<aside class="border border-transparent border-r-black py-20 pr-5 mr-5 w-[200px]">
-	<nav class="flex flex-col flex-1 h-full gap-5">
-		<a class="flex items-center gap-2 hover:scale-105 focus:scale-105" href="dashboard">
+<aside
+	class="border border-transparent border-b-black md:border-r-black md:border-b-transparent py-12 md:py-20 pr-5 mr-5 md:w-[200px]"
+>
+	<nav class="flex justify-center md:justify-start md:flex-col flex-1 h-full gap-5">
+		<a
+			class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path === '/dashboard' ? 'font-bold pointer-events-none' : ''}`}
+			href="dashboard"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -35,7 +48,10 @@
 			<span>Dashboard</span>
 		</a>
 		{#if user.role === 'admin'}
-			<a class="flex items-center gap-2 hover:scale-105 focus:scale-105" href="generator">
+			<a
+				class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path === '/generator' ? 'font-bold pointer-events-none' : ''}`}
+				href="generator"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"

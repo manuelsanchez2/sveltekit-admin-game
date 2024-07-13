@@ -2,7 +2,7 @@
 	import '../app.css';
 	import { login } from '../stores/auth';
 	import { goto } from '$app/navigation';
-	import { USERS } from '../db/data';
+	import { USERS } from '../db/users';
 	import { onMount } from 'svelte';
 
 	const handleLogin = async () => {

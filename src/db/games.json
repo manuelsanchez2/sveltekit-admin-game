@@ -1,0 +1,20 @@
+[
+	{
+		"id": 242734327432423,
+		"name": "Game 1",
+		"publishedAt": "2024-07-11",
+		"isActive": false
+	},
+	{
+		"id": 242734327432424,
+		"name": "Game 2",
+		"publishedAt": "2024-07-12",
+		"isActive": true
+	},
+	{
+		"id": 242734327432425,
+		"name": "Game 3",
+		"publishedAt": "2024-07-13",
+		"isActive": true
+	}
+]
