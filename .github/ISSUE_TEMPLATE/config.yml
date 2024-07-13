@@ -3,3 +3,6 @@ contact_links:
   - name: User Story Template
     url: https://github.com/manuelsanchez2/sveltekit-admin-game/issues/new?template=user_story_template.md
     about: Create a new user story issue.
+  - name: Bug Report
+    url: https://github.com/your-repo/issues/new?template=bug_report.md
+    about: Report a bug to help us improve.
