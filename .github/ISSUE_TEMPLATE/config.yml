@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User Story Template
+    url: https://github.com/manuelsanchez2/sveltekit-admin-game/issues/new?template=user_story_template.md
+    about: Create a new user story issue.
