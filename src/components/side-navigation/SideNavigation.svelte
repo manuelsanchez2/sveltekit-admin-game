@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { UserI } from '../../types';
-	import { goto } from '$app/navigation';
+	import { afterNavigate, goto } from '$app/navigation';
 	import { logout } from '$stores/auth';
 	import { onMount } from 'svelte';
 	export let user: UserI = {} as UserI;
@@ -9,7 +9,7 @@
 	const handleLogout = async () => {
 		try {
 			await logout();
-			goto('/?logged_out=true');
+			goto('/admin?logged_out=true');
 		} catch (error) {
 			console.error(error);
 		}
@@ -19,7 +19,9 @@
 		path = window.location.pathname;
 	});
 
-	$: console.log('Reactive path:', path);
+	afterNavigate(() => {
+		path = window.location.pathname;
+	});
 </script>
 
 <aside
@@ -27,7 +29,7 @@
 >
 	<nav class="flex justify-center md:justify-start md:flex-col flex-1 h-full gap-5">
 		<a
-			class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path === '/dashboard' ? 'font-bold pointer-events-none' : ''}`}
+			class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path == '/admin/dashboard' ? 'font-bold pointer-events-none' : ''}`}
 			href="dashboard"
 		>
 			<svg
@@ -49,7 +51,7 @@
 		</a>
 		{#if user.role === 'admin'}
 			<a
-				class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path === '/generator' ? 'font-bold pointer-events-none' : ''}`}
+				class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path == '/admin/generator' ? 'font-bold pointer-events-none' : ''}`}
 				href="generator"
 			>
 				<svg

@@ -12,8 +12,9 @@ export interface AuthState {
 }
 
 export interface GameI {
-	id: number;
+	id: string;
 	name: string;
 	publishedAt: string;
 	isActive: boolean;
+	words: string[];
 }

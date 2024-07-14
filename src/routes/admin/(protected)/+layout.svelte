@@ -1,10 +1,9 @@
-<script>
+<script lang="ts">
+	import '$lib/styles/app.css';
 	import { goto } from '$app/navigation';
-	import { isUserAuthenticated } from '$stores/auth';
 	import { onMount } from 'svelte';
 
-	import '../../app.css';
-	import SideNavigation from '../../components/side-navigation/SideNavigation.svelte';
+	import SideNavigation from '$components/side-navigation/SideNavigation.svelte';
 	import { getUserById } from '$db/queries';
 
 	export let data;

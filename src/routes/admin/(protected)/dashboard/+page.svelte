@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte';
-	import GAMES from '../../db/games.json';
+	import GAMES from '$db/games.json';
+	import type { GameI } from '../../../../types';
 
 	let newGameModal = false;
 
@@ -19,7 +20,6 @@
 		TableSearch
 	} from 'flowbite-svelte';
 	import { debounce, highlightMatch, transformedPublishedData } from '$utils';
-	import type { GameI } from '../../types.js';
 
 	let searchTerm = '';
 	let debouncedSearchTerm = '';
@@ -44,7 +44,7 @@
 		}
 	});
 
-	function selectGame(id: number) {
+	function selectGame(id: string) {
 		selectGameModal = true;
 		selectedGameToEdit = items.find((item) => item.id === id) as GameI;
 		copyOfSelectedGame = { ...selectedGameToEdit };
@@ -83,6 +83,7 @@
 				<TableHeadCell>Date</TableHeadCell>
 				<TableHeadCell>Active?</TableHeadCell>
 				<TableHeadCell></TableHeadCell>
+				<TableHeadCell></TableHeadCell>
 			</TableHead>
 			<TableBody tableBodyClass="divide-y">
 				{#if filteredItems.length > 0}
@@ -97,6 +98,27 @@
 								)}</TableBodyCell
 							>
 							<TableBodyCell>{item.isActive}</TableBodyCell>
+							<TableBodyCell>
+								<a target="_blank" href={`/?gameId=${item.id}`}>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="icon icon-tabler icons-tabler-outline icon-tabler-eye"
+										><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+											d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"
+										/><path
+											d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+										/></svg
+									>
+								</a>
+							</TableBodyCell>
 							<TableBodyCell>
 								<button on:click={() => selectGame(item.id)} class="w-full text-black"
 									><svg

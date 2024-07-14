@@ -1,4 +1,6 @@
-export function load({ cookies, request }) {
+import type { LayoutServerLoad } from './$types';
+
+export const load: LayoutServerLoad = ({ cookies, request }) => {
 	cookies.set('loggedIn', 'true', { path: '/' });
 	const isLoggedIn = cookies.get('loggedIn');
 
@@ -21,4 +23,4 @@ export function load({ cookies, request }) {
 			userId
 		};
 	}
-}
+};

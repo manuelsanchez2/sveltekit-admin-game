@@ -1,20 +1,23 @@
 [
 	{
-		"id": 242734327432423,
+		"id": "689bd5b1-a5d4-46cb-9355-058a85799f3c",
 		"name": "Game 1",
 		"publishedAt": "2024-07-11",
-		"isActive": false
+		"isActive": false,
+		"words": ["OCEAN", "RIVULET", "WATERFALL", "STREAMLET", "LAGOON", "SPRING", "HARBOR"]
 	},
 	{
-		"id": 242734327432424,
+		"id": "8f51b6c7-8e3f-4284-a989-18d05f07aeae",
 		"name": "Game 2",
 		"publishedAt": "2024-07-12",
-		"isActive": true
+		"isActive": true,
+		"words": ["FOREST", "MOUNTAIN", "PLAIN", "DESERT", "MEADOW", "JUNGLE", "GREATCANYON"]
 	},
 	{
-		"id": 242734327432425,
+		"id": "28b8bf65-62e9-4322-9e14-31e31b254676",
 		"name": "Game 3",
 		"publishedAt": "2024-07-13",
-		"isActive": true
+		"isActive": true,
+		"words": ["GRANDMOTHER", "FATHER", "BROTHER", "SISTER", "COUSIN", "GRANDMA", "UNCLE"]
 	}
 ]
