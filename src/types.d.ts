@@ -17,4 +17,18 @@ export interface GameI {
 	publishedAt: string;
 	isActive: boolean;
 	words: string[];
+	lettersCoordinates: CoordinateI[];
+}
+
+export interface CharacterI {
+	char: string;
+	word: string;
+}
+
+export interface CoordinateI {
+	id: number;
+	letter: string;
+	coordinateX: number;
+	coordinateY: number;
+	word: string;
 }

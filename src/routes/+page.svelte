@@ -4,12 +4,13 @@
 	import { onMount } from 'svelte';
 	import GAMES from '$db/games.json';
 	import { getGameById } from '$db/queries';
-	import CharacterGridGenerator from '$components/character-grid/CharacterGridGenerator.svelte';
+
+	import CharacterGridGame from '$components/character-grid/CharacterGridGame.svelte';
 
 	const games = GAMES;
 	let isMounted = false;
 
-	let selectedGameId: string = games[0].id;
+	let selectedGameId: string;
 	let selectedGame;
 
 	onMount(() => {
@@ -17,6 +18,8 @@
 		const gameIdParam = urlParams.get('gameId');
 		if (gameIdParam) {
 			selectedGameId = gameIdParam;
+		} else {
+			selectedGameId = GAMES[0].id;
 		}
 		isMounted = true;
 	});
@@ -71,10 +74,10 @@
 
 	<small class="mb-8">Not playable yet, we are working on it!</small>
 
-	{#if selectedGame !== null}
+	{#if selectedGame !== null && selectedGame !== undefined}
 		<div>
 			<!-- // It should read not the debug, but the final one with the coordinates set and gneerated  -->
-			<CharacterGridGenerator isDebug={true} selectedWords={selectedGame?.words ?? []} />
+			<CharacterGridGame {selectedGame} />
 		</div>
 	{/if}
 </main>
