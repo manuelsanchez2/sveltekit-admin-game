@@ -175,7 +175,7 @@
 				class="character-cell"
 				style="background-color: {isDebug ? getColor(coord.word) : '#f0f0f0'}"
 			>
-				{coord.letter}
+				{coord.letter.toUpperCase()}
 			</div>
 			{#if isDebug}
 				<Tooltip>

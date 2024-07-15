@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { UserI } from '../../types';
+	import type { UserI } from '$types';
 	import { afterNavigate, goto } from '$app/navigation';
 	import { logout } from '$stores/auth';
 	import { onMount } from 'svelte';
@@ -25,9 +25,9 @@
 </script>
 
 <aside
-	class="border border-transparent border-b-black md:border-r-black md:border-b-transparent py-12 md:py-20 pr-5 mr-5 md:w-[200px]"
+	class="border border-transparent border-b-black md:border-r-black md:border-b-transparent py-12 md:py-20 pr-5 mr-5 md:w-[210px]"
 >
-	<nav class="flex justify-center md:justify-start md:flex-col flex-1 h-full gap-5">
+	<nav class="flex justify-center md:justify-start flex-col flex-1 h-full gap-5">
 		<a
 			class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path == '/admin/dashboard' ? 'font-bold pointer-events-none' : ''}`}
 			href="dashboard"
@@ -51,7 +51,7 @@
 		</a>
 		{#if user.role === 'admin'}
 			<a
-				class={`flex items-center gap-2 hover:scale-105 focus:scale-105 ${path == '/admin/generator' ? 'font-bold pointer-events-none' : ''}`}
+				class={`flex items-center gap-2 text-nowrap hover:scale-105 focus:scale-105 ${path == '/admin/generator' ? 'font-bold pointer-events-none' : ''}`}
 				href="generator"
 			>
 				<svg

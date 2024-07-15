@@ -18,7 +18,8 @@ const config = {
 			$utils: './src/utils',
 			$db: './src/db',
 			$utils: './src/utils',
-			$constants: './src/constants'
+			$constants: './src/constants',
+			$types: './src/types'
 		},
 		adapter: adapter()
 	}

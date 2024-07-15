@@ -1,3 +1,12 @@
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
-// export const prerender = true;
+import type { GameI } from '../types/index.js';
+
+export async function load({ fetch }) {
+	const allGames = await fetch('/api/games');
+	const games = await allGames.json();
+
+	return {
+		games: games
+	} as {
+		games: GameI[];
+	};
+}

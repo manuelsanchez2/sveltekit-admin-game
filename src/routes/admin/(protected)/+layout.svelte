@@ -5,6 +5,7 @@
 
 	import SideNavigation from '$components/side-navigation/SideNavigation.svelte';
 	import { getUserById } from '$db/queries';
+	import Toasts from '$components/toast/Toasts.svelte';
 
 	export let data;
 	const user = getUserById(Number(data.userId));
@@ -17,6 +18,7 @@
 </script>
 
 <div class="app">
+	<Toasts />
 	<main class="px-5 flex flex-col md:flex-row h-screen">
 		<SideNavigation {user} />
 

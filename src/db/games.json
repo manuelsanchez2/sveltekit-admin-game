@@ -1,116 +1,1414 @@
 [
-	{
-		"id": "28b8bf65-62e9-4322-9e14-31e31b254676",
-		"name": "Family above all",
-		"publishedAt": "2024-07-13",
-		"isActive": true,
-		"words": ["GRANDMOTHER", "FATHER", "BROTHER", "SISTER", "COUSIN", "HUSBAND", "UNCLE"],
-		"lettersCoordinates": [
-			{ "id": 1, "letter": "B", "coordinateX": 1, "coordinateY": 1, "word": "BROTHER" },
-			{ "id": 2, "letter": "R", "coordinateX": 2, "coordinateY": 1, "word": "BROTHER" },
-			{ "id": 3, "letter": "O", "coordinateX": 2, "coordinateY": 2, "word": "BROTHER" },
-			{ "id": 4, "letter": "T", "coordinateX": 3, "coordinateY": 1, "word": "BROTHER" },
-			{ "id": 5, "letter": "H", "coordinateX": 3, "coordinateY": 2, "word": "BROTHER" },
-			{ "id": 6, "letter": "E", "coordinateX": 4, "coordinateY": 1, "word": "BROTHER" },
-			{ "id": 7, "letter": "R", "coordinateX": 4, "coordinateY": 2, "word": "BROTHER" },
-			{ "id": 8, "letter": "G", "coordinateX": 5, "coordinateY": 1, "word": "GRANDMOTHER" },
-			{ "id": 9, "letter": "A", "coordinateX": 4, "coordinateY": 3, "word": "GRANDMOTHER" },
-			{ "id": 10, "letter": "N", "coordinateX": 5, "coordinateY": 3, "word": "GRANDMOTHER" },
-			{ "id": 11, "letter": "D", "coordinateX": 4, "coordinateY": 4, "word": "GRANDMOTHER" },
-			{ "id": 12, "letter": "M", "coordinateX": 5, "coordinateY": 4, "word": "GRANDMOTHER" },
-			{ "id": 13, "letter": "O", "coordinateX": 6, "coordinateY": 5, "word": "GRANDMOTHER" },
-			{ "id": 14, "letter": "T", "coordinateX": 7, "coordinateY": 5, "word": "GRANDMOTHER" },
-			{ "id": 15, "letter": "H", "coordinateX": 7, "coordinateY": 6, "word": "GRANDMOTHER" },
-			{ "id": 16, "letter": "E", "coordinateX": 8, "coordinateY": 6, "word": "GRANDMOTHER" },
-			{ "id": 17, "letter": "R", "coordinateX": 8, "coordinateY": 5, "word": "GRANDMOTHER" },
-			{ "id": 18, "letter": "F", "coordinateX": 8, "coordinateY": 1, "word": "FATHER" },
-			{ "id": 19, "letter": "A", "coordinateX": 7, "coordinateY": 1, "word": "FATHER" },
-			{ "id": 20, "letter": "T", "coordinateX": 6, "coordinateY": 1, "word": "FATHER" },
-			{ "id": 21, "letter": "H", "coordinateX": 6, "coordinateY": 2, "word": "FATHER" },
-			{ "id": 22, "letter": "E", "coordinateX": 6, "coordinateY": 3, "word": "FATHER" },
-			{ "id": 23, "letter": "R", "coordinateX": 6, "coordinateY": 4, "word": "FATHER" },
-			{ "id": 24, "letter": "S", "coordinateX": 7, "coordinateY": 2, "word": "SISTER" },
-			{ "id": 25, "letter": "I", "coordinateX": 7, "coordinateY": 3, "word": "SISTER" },
-			{ "id": 26, "letter": "S", "coordinateX": 8, "coordinateY": 2, "word": "SISTER" },
-			{ "id": 27, "letter": "T", "coordinateX": 8, "coordinateY": 3, "word": "SISTER" },
-			{ "id": 28, "letter": "E", "coordinateX": 8, "coordinateY": 4, "word": "SISTER" },
-			{ "id": 29, "letter": "R", "coordinateX": 7, "coordinateY": 4, "word": "SISTER" },
-			{ "id": 30, "letter": "U", "coordinateX": 1, "coordinateY": 2, "word": "UNCLE" },
-			{ "id": 31, "letter": "N", "coordinateX": 1, "coordinateY": 3, "word": "UNCLE" },
-			{ "id": 32, "letter": "C", "coordinateX": 1, "coordinateY": 4, "word": "UNCLE" },
-			{ "id": 33, "letter": "L", "coordinateX": 2, "coordinateY": 3, "word": "UNCLE" },
-			{ "id": 34, "letter": "E", "coordinateX": 2, "coordinateY": 4, "word": "UNCLE" },
-			{ "id": 35, "letter": "H", "coordinateX": 1, "coordinateY": 6, "word": "HUSBAND" },
-			{ "id": 36, "letter": "U", "coordinateX": 1, "coordinateY": 5, "word": "HUSBAND" },
-			{ "id": 37, "letter": "S", "coordinateX": 2, "coordinateY": 5, "word": "HUSBAND" },
-			{ "id": 38, "letter": "B", "coordinateX": 2, "coordinateY": 6, "word": "HUSBAND" },
-			{ "id": 39, "letter": "A", "coordinateX": 3, "coordinateY": 5, "word": "HUSBAND" },
-			{ "id": 40, "letter": "N", "coordinateX": 3, "coordinateY": 4, "word": "HUSBAND" },
-			{ "id": 41, "letter": "D", "coordinateX": 3, "coordinateY": 3, "word": "HUSBAND" },
-			{ "id": 42, "letter": "C", "coordinateX": 3, "coordinateY": 6, "word": "COUSIN" },
-			{ "id": 43, "letter": "O", "coordinateX": 4, "coordinateY": 6, "word": "COUSIN" },
-			{ "id": 44, "letter": "U", "coordinateX": 4, "coordinateY": 5, "word": "COUSIN" },
-			{ "id": 45, "letter": "S", "coordinateX": 5, "coordinateY": 5, "word": "COUSIN" },
-			{ "id": 46, "letter": "I", "coordinateX": 5, "coordinateY": 6, "word": "COUSIN" },
-			{ "id": 47, "letter": "N", "coordinateX": 6, "coordinateY": 6, "word": "COUSIN" },
-			{ "id": 48, "letter": "R", "coordinateX": 5, "coordinateY": 2, "word": "GRANDMOTHER" }
-		]
-	},
-	{
-		"id": "57ac5a8e-2e12-44f6-8b19-1e539d2b4c19",
-		"name": "Game inspired by Auto suggestion",
-		"publishedAt": "2024-07-14",
-		"isActive": false,
-		"words": ["EQUINOX", "CHARGER", "ACCORD", "OUTBACK", "SOUL", "EXPLORER", "CARMODELS"],
-		"lettersCoordinates": [
-			{ "id": 1, "letter": "E", "coordinateX": 1, "coordinateY": 1, "word": "EQUINOX" },
-			{ "id": 2, "letter": "C", "coordinateX": 1, "coordinateY": 2, "word": "CHARGER" },
-			{ "id": 3, "letter": "H", "coordinateX": 1, "coordinateY": 3, "word": "CHARGER" },
-			{ "id": 4, "letter": "A", "coordinateX": 1, "coordinateY": 4, "word": "CHARGER" },
-			{ "id": 5, "letter": "R", "coordinateX": 1, "coordinateY": 5, "word": "CHARGER" },
-			{ "id": 6, "letter": "R", "coordinateX": 1, "coordinateY": 6, "word": "CHARGER" },
-			{ "id": 7, "letter": "Q", "coordinateX": 2, "coordinateY": 1, "word": "EQUINOX" },
-			{ "id": 8, "letter": "N", "coordinateX": 2, "coordinateY": 2, "word": "EQUINOX" },
-			{ "id": 9, "letter": "O", "coordinateX": 2, "coordinateY": 3, "word": "EQUINOX" },
-			{ "id": 10, "letter": "X", "coordinateX": 2, "coordinateY": 4, "word": "EQUINOX" },
-			{ "id": 11, "letter": "G", "coordinateX": 2, "coordinateY": 5, "word": "CHARGER" },
-			{ "id": 12, "letter": "E", "coordinateX": 2, "coordinateY": 6, "word": "CHARGER" },
-			{ "id": 13, "letter": "U", "coordinateX": 3, "coordinateY": 1, "word": "EQUINOX" },
-			{ "id": 14, "letter": "I", "coordinateX": 3, "coordinateY": 2, "word": "EQUINOX" },
-			{ "id": 15, "letter": "R", "coordinateX": 3, "coordinateY": 3, "word": "CARMODELS" },
-			{ "id": 16, "letter": "M", "coordinateX": 3, "coordinateY": 4, "word": "CARMODELS" },
-			{ "id": 17, "letter": "O", "coordinateX": 3, "coordinateY": 5, "word": "ACCORD" },
-			{ "id": 18, "letter": "D", "coordinateX": 3, "coordinateY": 6, "word": "ACCORD" },
-			{ "id": 19, "letter": "C", "coordinateX": 4, "coordinateY": 1, "word": "CARMODELS" },
-			{ "id": 20, "letter": "A", "coordinateX": 4, "coordinateY": 2, "word": "CARMODELS" },
-			{ "id": 21, "letter": "X", "coordinateX": 4, "coordinateY": 3, "word": "EXPLORER" },
-			{ "id": 22, "letter": "O", "coordinateX": 4, "coordinateY": 4, "word": "CARMODELS" },
-			{ "id": 23, "letter": "C", "coordinateX": 4, "coordinateY": 5, "word": "ACCORD" },
-			{ "id": 24, "letter": "R", "coordinateX": 4, "coordinateY": 6, "word": "ACCORD" },
-			{ "id": 25, "letter": "L", "coordinateX": 5, "coordinateY": 1, "word": "EXPLORER" },
-			{ "id": 26, "letter": "P", "coordinateX": 5, "coordinateY": 2, "word": "EXPLORER" },
-			{ "id": 27, "letter": "E", "coordinateX": 5, "coordinateY": 3, "word": "EXPLORER" },
-			{ "id": 28, "letter": "D", "coordinateX": 5, "coordinateY": 4, "word": "CARMODELS" },
-			{ "id": 29, "letter": "C", "coordinateX": 5, "coordinateY": 5, "word": "ACCORD" },
-			{ "id": 30, "letter": "A", "coordinateX": 5, "coordinateY": 6, "word": "ACCORD" },
-			{ "id": 31, "letter": "R", "coordinateX": 6, "coordinateY": 1, "word": "EXPLORER" },
-			{ "id": 32, "letter": "O", "coordinateX": 6, "coordinateY": 2, "word": "EXPLORER" },
-			{ "id": 33, "letter": "K", "coordinateX": 6, "coordinateY": 3, "word": "OUTBACK" },
-			{ "id": 34, "letter": "E", "coordinateX": 6, "coordinateY": 4, "word": "CARMODELS" },
-			{ "id": 35, "letter": "L", "coordinateX": 6, "coordinateY": 5, "word": "CARMODELS" },
-			{ "id": 36, "letter": "S", "coordinateX": 6, "coordinateY": 6, "word": "CARMODELS" },
-			{ "id": 37, "letter": "E", "coordinateX": 7, "coordinateY": 1, "word": "EXPLORER" },
-			{ "id": 38, "letter": "R", "coordinateX": 7, "coordinateY": 2, "word": "EXPLORER" },
-			{ "id": 39, "letter": "U", "coordinateX": 7, "coordinateY": 3, "word": "SOUL" },
-			{ "id": 40, "letter": "C", "coordinateX": 7, "coordinateY": 4, "word": "OUTBACK" },
-			{ "id": 41, "letter": "B", "coordinateX": 7, "coordinateY": 5, "word": "OUTBACK" },
-			{ "id": 42, "letter": "O", "coordinateX": 7, "coordinateY": 6, "word": "OUTBACK" },
-			{ "id": 43, "letter": "S", "coordinateX": 8, "coordinateY": 1, "word": "SOUL" },
-			{ "id": 44, "letter": "O", "coordinateX": 8, "coordinateY": 2, "word": "SOUL" },
-			{ "id": 45, "letter": "L", "coordinateX": 8, "coordinateY": 3, "word": "SOUL" },
-			{ "id": 46, "letter": "A", "coordinateX": 8, "coordinateY": 4, "word": "OUTBACK" },
-			{ "id": 47, "letter": "T", "coordinateX": 8, "coordinateY": 5, "word": "OUTBACK" },
-			{ "id": 48, "letter": "U", "coordinateX": 8, "coordinateY": 6, "word": "OUTBACK" }
-		]
-	}
+  {
+    "id": "28b8bf65-62e9-4322-9e14-31e31b254676",
+    "name": "Family above all",
+    "publishedAt": "2024-07-13",
+    "isActive": true,
+    "words": [
+      "GRANDMOTHER",
+      "FATHER",
+      "BROTHER",
+      "SISTER",
+      "COUSIN",
+      "HUSBAND",
+      "UNCLE"
+    ],
+    "lettersCoordinates": [
+      {
+        "id": 1,
+        "letter": "B",
+        "coordinateX": 1,
+        "coordinateY": 1,
+        "word": "BROTHER"
+      },
+      {
+        "id": 2,
+        "letter": "R",
+        "coordinateX": 2,
+        "coordinateY": 1,
+        "word": "BROTHER"
+      },
+      {
+        "id": 3,
+        "letter": "O",
+        "coordinateX": 2,
+        "coordinateY": 2,
+        "word": "BROTHER"
+      },
+      {
+        "id": 4,
+        "letter": "T",
+        "coordinateX": 3,
+        "coordinateY": 1,
+        "word": "BROTHER"
+      },
+      {
+        "id": 5,
+        "letter": "H",
+        "coordinateX": 3,
+        "coordinateY": 2,
+        "word": "BROTHER"
+      },
+      {
+        "id": 6,
+        "letter": "E",
+        "coordinateX": 4,
+        "coordinateY": 1,
+        "word": "BROTHER"
+      },
+      {
+        "id": 7,
+        "letter": "R",
+        "coordinateX": 4,
+        "coordinateY": 2,
+        "word": "BROTHER"
+      },
+      {
+        "id": 8,
+        "letter": "G",
+        "coordinateX": 5,
+        "coordinateY": 1,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 9,
+        "letter": "A",
+        "coordinateX": 4,
+        "coordinateY": 3,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 10,
+        "letter": "N",
+        "coordinateX": 5,
+        "coordinateY": 3,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 11,
+        "letter": "D",
+        "coordinateX": 4,
+        "coordinateY": 4,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 12,
+        "letter": "M",
+        "coordinateX": 5,
+        "coordinateY": 4,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 13,
+        "letter": "O",
+        "coordinateX": 6,
+        "coordinateY": 5,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 14,
+        "letter": "T",
+        "coordinateX": 7,
+        "coordinateY": 5,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 15,
+        "letter": "H",
+        "coordinateX": 7,
+        "coordinateY": 6,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 16,
+        "letter": "E",
+        "coordinateX": 8,
+        "coordinateY": 6,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 17,
+        "letter": "R",
+        "coordinateX": 8,
+        "coordinateY": 5,
+        "word": "GRANDMOTHER"
+      },
+      {
+        "id": 18,
+        "letter": "F",
+        "coordinateX": 8,
+        "coordinateY": 1,
+        "word": "FATHER"
+      },
+      {
+        "id": 19,
+        "letter": "A",
+        "coordinateX": 7,
+        "coordinateY": 1,
+        "word": "FATHER"
+      },
+      {
+        "id": 20,
+        "letter": "T",
+        "coordinateX": 6,
+        "coordinateY": 1,
+        "word": "FATHER"
+      },
+      {
+        "id": 21,
+        "letter": "H",
+        "coordinateX": 6,
+        "coordinateY": 2,
+        "word": "FATHER"
+      },
+      {
+        "id": 22,
+        "letter": "E",
+        "coordinateX": 6,
+        "coordinateY": 3,
+        "word": "FATHER"
+      },
+      {
+        "id": 23,
+        "letter": "R",
+        "coordinateX": 6,
+        "coordinateY": 4,
+        "word": "FATHER"
+      },
+      {
+        "id": 24,
+        "letter": "S",
+        "coordinateX": 7,
+        "coordinateY": 2,
+        "word": "SISTER"
+      },
+      {
+        "id": 25,
+        "letter": "I",
+        "coordinateX": 7,
+        "coordinateY": 3,
+        "word": "SISTER"
+      },
+      {
+        "id": 26,
+        "letter": "S",
+        "coordinateX": 8,
+        "coordinateY": 2,
+        "word": "SISTER"
+      },
+      {
+        "id": 27,
+        "letter": "T",
+        "coordinateX": 8,
+        "coordinateY": 3,
+        "word": "SISTER"
+      },
+      {
+        "id": 28,
+        "letter": "E",
+        "coordinateX": 8,
+        "coordinateY": 4,
+        "word": "SISTER"
+      },
+      {
+        "id": 29,
+        "letter": "R",
+        "coordinateX": 7,
+        "coordinateY": 4,
+        "word": "SISTER"
+      },
+      {
+        "id": 30,
+        "letter": "U",
+        "coordinateX": 1,
+        "coordinateY": 2,
+        "word": "UNCLE"
+      },
+      {
+        "id": 31,
+        "letter": "N",
+        "coordinateX": 1,
+        "coordinateY": 3,
+        "word": "UNCLE"
+      },
+      {
+        "id": 32,
+        "letter": "C",
+        "coordinateX": 1,
+        "coordinateY": 4,
+        "word": "UNCLE"
+      },
+      {
+        "id": 33,
+        "letter": "L",
+        "coordinateX": 2,
+        "coordinateY": 3,
+        "word": "UNCLE"
+      },
+      {
+        "id": 34,
+        "letter": "E",
+        "coordinateX": 2,
+        "coordinateY": 4,
+        "word": "UNCLE"
+      },
+      {
+        "id": 35,
+        "letter": "H",
+        "coordinateX": 1,
+        "coordinateY": 6,
+        "word": "HUSBAND"
+      },
+      {
+        "id": 36,
+        "letter": "U",
+        "coordinateX": 1,
+        "coordinateY": 5,
+        "word": "HUSBAND"
+      },
+      {
+        "id": 37,
+        "letter": "S",
+        "coordinateX": 2,
+        "coordinateY": 5,
+        "word": "HUSBAND"
+      },
+      {
+        "id": 38,
+        "letter": "B",
+        "coordinateX": 2,
+        "coordinateY": 6,
+        "word": "HUSBAND"
+      },
+      {
+        "id": 39,
+        "letter": "A",
+        "coordinateX": 3,
+        "coordinateY": 5,
+        "word": "HUSBAND"
+      },
+      {
+        "id": 40,
+        "letter": "N",
+        "coordinateX": 3,
+        "coordinateY": 4,
+        "word": "HUSBAND"
+      },
+      {
+        "id": 41,
+        "letter": "D",
+        "coordinateX": 3,
+        "coordinateY": 3,
+        "word": "HUSBAND"
+      },
+      {
+        "id": 42,
+        "letter": "C",
+        "coordinateX": 3,
+        "coordinateY": 6,
+        "word": "COUSIN"
+      },
+      {
+        "id": 43,
+        "letter": "O",
+        "coordinateX": 4,
+        "coordinateY": 6,
+        "word": "COUSIN"
+      },
+      {
+        "id": 44,
+        "letter": "U",
+        "coordinateX": 4,
+        "coordinateY": 5,
+        "word": "COUSIN"
+      },
+      {
+        "id": 45,
+        "letter": "S",
+        "coordinateX": 5,
+        "coordinateY": 5,
+        "word": "COUSIN"
+      },
+      {
+        "id": 46,
+        "letter": "I",
+        "coordinateX": 5,
+        "coordinateY": 6,
+        "word": "COUSIN"
+      },
+      {
+        "id": 47,
+        "letter": "N",
+        "coordinateX": 6,
+        "coordinateY": 6,
+        "word": "COUSIN"
+      },
+      {
+        "id": 48,
+        "letter": "R",
+        "coordinateX": 5,
+        "coordinateY": 2,
+        "word": "GRANDMOTHER"
+      }
+    ]
+  },
+  {
+    "id": "57ac5a8e-2e12-44f6-8b19-1e539d2b4c19",
+    "name": "NY: Game inspired by Auto suggestion",
+    "publishedAt": "2024-07-14",
+    "isActive": false,
+    "words": [
+      "EQUINOX",
+      "CHARGER",
+      "ACCORD",
+      "OUTBACK",
+      "SOUL",
+      "EXPLORER",
+      "CARMODELS"
+    ],
+    "lettersCoordinates": [
+      {
+        "id": 1,
+        "letter": "E",
+        "coordinateX": 1,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 2,
+        "letter": "C",
+        "coordinateX": 1,
+        "coordinateY": 2,
+        "word": "CHARGER"
+      },
+      {
+        "id": 3,
+        "letter": "H",
+        "coordinateX": 1,
+        "coordinateY": 3,
+        "word": "CHARGER"
+      },
+      {
+        "id": 4,
+        "letter": "A",
+        "coordinateX": 1,
+        "coordinateY": 4,
+        "word": "CHARGER"
+      },
+      {
+        "id": 5,
+        "letter": "R",
+        "coordinateX": 1,
+        "coordinateY": 5,
+        "word": "CHARGER"
+      },
+      {
+        "id": 6,
+        "letter": "R",
+        "coordinateX": 1,
+        "coordinateY": 6,
+        "word": "CHARGER"
+      },
+      {
+        "id": 7,
+        "letter": "Q",
+        "coordinateX": 2,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 8,
+        "letter": "N",
+        "coordinateX": 2,
+        "coordinateY": 2,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 9,
+        "letter": "O",
+        "coordinateX": 2,
+        "coordinateY": 3,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 10,
+        "letter": "X",
+        "coordinateX": 2,
+        "coordinateY": 4,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 11,
+        "letter": "G",
+        "coordinateX": 2,
+        "coordinateY": 5,
+        "word": "CHARGER"
+      },
+      {
+        "id": 12,
+        "letter": "E",
+        "coordinateX": 2,
+        "coordinateY": 6,
+        "word": "CHARGER"
+      },
+      {
+        "id": 13,
+        "letter": "U",
+        "coordinateX": 3,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 14,
+        "letter": "I",
+        "coordinateX": 3,
+        "coordinateY": 2,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 15,
+        "letter": "R",
+        "coordinateX": 3,
+        "coordinateY": 3,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 16,
+        "letter": "M",
+        "coordinateX": 3,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 17,
+        "letter": "O",
+        "coordinateX": 3,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 18,
+        "letter": "D",
+        "coordinateX": 3,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 19,
+        "letter": "C",
+        "coordinateX": 4,
+        "coordinateY": 1,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 20,
+        "letter": "A",
+        "coordinateX": 4,
+        "coordinateY": 2,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 21,
+        "letter": "X",
+        "coordinateX": 4,
+        "coordinateY": 3,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 22,
+        "letter": "O",
+        "coordinateX": 4,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 23,
+        "letter": "C",
+        "coordinateX": 4,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 24,
+        "letter": "R",
+        "coordinateX": 4,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 25,
+        "letter": "L",
+        "coordinateX": 5,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 26,
+        "letter": "P",
+        "coordinateX": 5,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 27,
+        "letter": "E",
+        "coordinateX": 5,
+        "coordinateY": 3,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 28,
+        "letter": "D",
+        "coordinateX": 5,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 29,
+        "letter": "C",
+        "coordinateX": 5,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 30,
+        "letter": "A",
+        "coordinateX": 5,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 31,
+        "letter": "R",
+        "coordinateX": 6,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 32,
+        "letter": "O",
+        "coordinateX": 6,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 33,
+        "letter": "K",
+        "coordinateX": 6,
+        "coordinateY": 3,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 34,
+        "letter": "E",
+        "coordinateX": 6,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 35,
+        "letter": "L",
+        "coordinateX": 6,
+        "coordinateY": 5,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 36,
+        "letter": "S",
+        "coordinateX": 6,
+        "coordinateY": 6,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 37,
+        "letter": "E",
+        "coordinateX": 7,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 38,
+        "letter": "R",
+        "coordinateX": 7,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 39,
+        "letter": "U",
+        "coordinateX": 7,
+        "coordinateY": 3,
+        "word": "SOUL"
+      },
+      {
+        "id": 40,
+        "letter": "C",
+        "coordinateX": 7,
+        "coordinateY": 4,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 41,
+        "letter": "B",
+        "coordinateX": 7,
+        "coordinateY": 5,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 42,
+        "letter": "O",
+        "coordinateX": 7,
+        "coordinateY": 6,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 43,
+        "letter": "S",
+        "coordinateX": 8,
+        "coordinateY": 1,
+        "word": "SOUL"
+      },
+      {
+        "id": 44,
+        "letter": "O",
+        "coordinateX": 8,
+        "coordinateY": 2,
+        "word": "SOUL"
+      },
+      {
+        "id": 45,
+        "letter": "L",
+        "coordinateX": 8,
+        "coordinateY": 3,
+        "word": "SOUL"
+      },
+      {
+        "id": 46,
+        "letter": "A",
+        "coordinateX": 8,
+        "coordinateY": 4,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 47,
+        "letter": "T",
+        "coordinateX": 8,
+        "coordinateY": 5,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 48,
+        "letter": "U",
+        "coordinateX": 8,
+        "coordinateY": 6,
+        "word": "OUTBACK"
+      }
+    ]
+  },
+  {
+    "id": "27ac5a8e-2e12-44f6-8b19-1e539d2b4c19",
+    "name": "This was a cool test actually!",
+    "publishedAt": "2024-07-10",
+    "isActive": false,
+    "words": [
+      "EQUINOX",
+      "CHARGER",
+      "ACCORD",
+      "OUTBACK",
+      "SOUL",
+      "EXPLORER",
+      "CARMODELS"
+    ],
+    "lettersCoordinates": [
+      {
+        "id": 1,
+        "letter": "E",
+        "coordinateX": 1,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 2,
+        "letter": "C",
+        "coordinateX": 1,
+        "coordinateY": 2,
+        "word": "CHARGER"
+      },
+      {
+        "id": 3,
+        "letter": "H",
+        "coordinateX": 1,
+        "coordinateY": 3,
+        "word": "CHARGER"
+      },
+      {
+        "id": 4,
+        "letter": "A",
+        "coordinateX": 1,
+        "coordinateY": 4,
+        "word": "CHARGER"
+      },
+      {
+        "id": 5,
+        "letter": "R",
+        "coordinateX": 1,
+        "coordinateY": 5,
+        "word": "CHARGER"
+      },
+      {
+        "id": 6,
+        "letter": "R",
+        "coordinateX": 1,
+        "coordinateY": 6,
+        "word": "CHARGER"
+      },
+      {
+        "id": 7,
+        "letter": "Q",
+        "coordinateX": 2,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 8,
+        "letter": "N",
+        "coordinateX": 2,
+        "coordinateY": 2,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 9,
+        "letter": "O",
+        "coordinateX": 2,
+        "coordinateY": 3,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 10,
+        "letter": "X",
+        "coordinateX": 2,
+        "coordinateY": 4,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 11,
+        "letter": "G",
+        "coordinateX": 2,
+        "coordinateY": 5,
+        "word": "CHARGER"
+      },
+      {
+        "id": 12,
+        "letter": "E",
+        "coordinateX": 2,
+        "coordinateY": 6,
+        "word": "CHARGER"
+      },
+      {
+        "id": 13,
+        "letter": "U",
+        "coordinateX": 3,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 14,
+        "letter": "I",
+        "coordinateX": 3,
+        "coordinateY": 2,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 15,
+        "letter": "R",
+        "coordinateX": 3,
+        "coordinateY": 3,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 16,
+        "letter": "M",
+        "coordinateX": 3,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 17,
+        "letter": "O",
+        "coordinateX": 3,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 18,
+        "letter": "D",
+        "coordinateX": 3,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 19,
+        "letter": "C",
+        "coordinateX": 4,
+        "coordinateY": 1,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 20,
+        "letter": "A",
+        "coordinateX": 4,
+        "coordinateY": 2,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 21,
+        "letter": "X",
+        "coordinateX": 4,
+        "coordinateY": 3,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 22,
+        "letter": "O",
+        "coordinateX": 4,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 23,
+        "letter": "C",
+        "coordinateX": 4,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 24,
+        "letter": "R",
+        "coordinateX": 4,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 25,
+        "letter": "L",
+        "coordinateX": 5,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 26,
+        "letter": "P",
+        "coordinateX": 5,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 27,
+        "letter": "E",
+        "coordinateX": 5,
+        "coordinateY": 3,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 28,
+        "letter": "D",
+        "coordinateX": 5,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 29,
+        "letter": "C",
+        "coordinateX": 5,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 30,
+        "letter": "A",
+        "coordinateX": 5,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 31,
+        "letter": "R",
+        "coordinateX": 6,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 32,
+        "letter": "O",
+        "coordinateX": 6,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 33,
+        "letter": "K",
+        "coordinateX": 6,
+        "coordinateY": 3,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 34,
+        "letter": "E",
+        "coordinateX": 6,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 35,
+        "letter": "L",
+        "coordinateX": 6,
+        "coordinateY": 5,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 36,
+        "letter": "S",
+        "coordinateX": 6,
+        "coordinateY": 6,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 37,
+        "letter": "E",
+        "coordinateX": 7,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 38,
+        "letter": "R",
+        "coordinateX": 7,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 39,
+        "letter": "U",
+        "coordinateX": 7,
+        "coordinateY": 3,
+        "word": "SOUL"
+      },
+      {
+        "id": 40,
+        "letter": "C",
+        "coordinateX": 7,
+        "coordinateY": 4,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 41,
+        "letter": "B",
+        "coordinateX": 7,
+        "coordinateY": 5,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 42,
+        "letter": "O",
+        "coordinateX": 7,
+        "coordinateY": 6,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 43,
+        "letter": "S",
+        "coordinateX": 8,
+        "coordinateY": 1,
+        "word": "SOUL"
+      },
+      {
+        "id": 44,
+        "letter": "O",
+        "coordinateX": 8,
+        "coordinateY": 2,
+        "word": "SOUL"
+      },
+      {
+        "id": 45,
+        "letter": "L",
+        "coordinateX": 8,
+        "coordinateY": 3,
+        "word": "SOUL"
+      },
+      {
+        "id": 46,
+        "letter": "A",
+        "coordinateX": 8,
+        "coordinateY": 4,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 47,
+        "letter": "T",
+        "coordinateX": 8,
+        "coordinateY": 5,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 48,
+        "letter": "U",
+        "coordinateX": 8,
+        "coordinateY": 6,
+        "word": "OUTBACK"
+      }
+    ]
+  },
+  {
+    "id": "37ac5a8e-2e12-44f6-8b19-1e539d2b4c19",
+    "name": "TEST 1111 ",
+    "publishedAt": "2024-07-15",
+    "isActive": false,
+    "words": [
+      "EQUINOX",
+      "CHARGER",
+      "ACCORD",
+      "OUTBACK",
+      "SOUL",
+      "EXPLORER",
+      "CARMODELS"
+    ],
+    "lettersCoordinates": [
+      {
+        "id": 1,
+        "letter": "E",
+        "coordinateX": 1,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 2,
+        "letter": "C",
+        "coordinateX": 1,
+        "coordinateY": 2,
+        "word": "CHARGER"
+      },
+      {
+        "id": 3,
+        "letter": "H",
+        "coordinateX": 1,
+        "coordinateY": 3,
+        "word": "CHARGER"
+      },
+      {
+        "id": 4,
+        "letter": "A",
+        "coordinateX": 1,
+        "coordinateY": 4,
+        "word": "CHARGER"
+      },
+      {
+        "id": 5,
+        "letter": "R",
+        "coordinateX": 1,
+        "coordinateY": 5,
+        "word": "CHARGER"
+      },
+      {
+        "id": 6,
+        "letter": "R",
+        "coordinateX": 1,
+        "coordinateY": 6,
+        "word": "CHARGER"
+      },
+      {
+        "id": 7,
+        "letter": "Q",
+        "coordinateX": 2,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 8,
+        "letter": "N",
+        "coordinateX": 2,
+        "coordinateY": 2,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 9,
+        "letter": "O",
+        "coordinateX": 2,
+        "coordinateY": 3,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 10,
+        "letter": "X",
+        "coordinateX": 2,
+        "coordinateY": 4,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 11,
+        "letter": "G",
+        "coordinateX": 2,
+        "coordinateY": 5,
+        "word": "CHARGER"
+      },
+      {
+        "id": 12,
+        "letter": "E",
+        "coordinateX": 2,
+        "coordinateY": 6,
+        "word": "CHARGER"
+      },
+      {
+        "id": 13,
+        "letter": "U",
+        "coordinateX": 3,
+        "coordinateY": 1,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 14,
+        "letter": "I",
+        "coordinateX": 3,
+        "coordinateY": 2,
+        "word": "EQUINOX"
+      },
+      {
+        "id": 15,
+        "letter": "R",
+        "coordinateX": 3,
+        "coordinateY": 3,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 16,
+        "letter": "M",
+        "coordinateX": 3,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 17,
+        "letter": "O",
+        "coordinateX": 3,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 18,
+        "letter": "D",
+        "coordinateX": 3,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 19,
+        "letter": "C",
+        "coordinateX": 4,
+        "coordinateY": 1,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 20,
+        "letter": "A",
+        "coordinateX": 4,
+        "coordinateY": 2,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 21,
+        "letter": "X",
+        "coordinateX": 4,
+        "coordinateY": 3,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 22,
+        "letter": "O",
+        "coordinateX": 4,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 23,
+        "letter": "C",
+        "coordinateX": 4,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 24,
+        "letter": "R",
+        "coordinateX": 4,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 25,
+        "letter": "L",
+        "coordinateX": 5,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 26,
+        "letter": "P",
+        "coordinateX": 5,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 27,
+        "letter": "E",
+        "coordinateX": 5,
+        "coordinateY": 3,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 28,
+        "letter": "D",
+        "coordinateX": 5,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 29,
+        "letter": "C",
+        "coordinateX": 5,
+        "coordinateY": 5,
+        "word": "ACCORD"
+      },
+      {
+        "id": 30,
+        "letter": "A",
+        "coordinateX": 5,
+        "coordinateY": 6,
+        "word": "ACCORD"
+      },
+      {
+        "id": 31,
+        "letter": "R",
+        "coordinateX": 6,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 32,
+        "letter": "O",
+        "coordinateX": 6,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 33,
+        "letter": "K",
+        "coordinateX": 6,
+        "coordinateY": 3,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 34,
+        "letter": "E",
+        "coordinateX": 6,
+        "coordinateY": 4,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 35,
+        "letter": "L",
+        "coordinateX": 6,
+        "coordinateY": 5,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 36,
+        "letter": "S",
+        "coordinateX": 6,
+        "coordinateY": 6,
+        "word": "CARMODELS"
+      },
+      {
+        "id": 37,
+        "letter": "E",
+        "coordinateX": 7,
+        "coordinateY": 1,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 38,
+        "letter": "R",
+        "coordinateX": 7,
+        "coordinateY": 2,
+        "word": "EXPLORER"
+      },
+      {
+        "id": 39,
+        "letter": "U",
+        "coordinateX": 7,
+        "coordinateY": 3,
+        "word": "SOUL"
+      },
+      {
+        "id": 40,
+        "letter": "C",
+        "coordinateX": 7,
+        "coordinateY": 4,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 41,
+        "letter": "B",
+        "coordinateX": 7,
+        "coordinateY": 5,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 42,
+        "letter": "O",
+        "coordinateX": 7,
+        "coordinateY": 6,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 43,
+        "letter": "S",
+        "coordinateX": 8,
+        "coordinateY": 1,
+        "word": "SOUL"
+      },
+      {
+        "id": 44,
+        "letter": "O",
+        "coordinateX": 8,
+        "coordinateY": 2,
+        "word": "SOUL"
+      },
+      {
+        "id": 45,
+        "letter": "L",
+        "coordinateX": 8,
+        "coordinateY": 3,
+        "word": "SOUL"
+      },
+      {
+        "id": 46,
+        "letter": "A",
+        "coordinateX": 8,
+        "coordinateY": 4,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 47,
+        "letter": "T",
+        "coordinateX": 8,
+        "coordinateY": 5,
+        "word": "OUTBACK"
+      },
+      {
+        "id": 48,
+        "letter": "U",
+        "coordinateX": 8,
+        "coordinateY": 6,
+        "word": "OUTBACK"
+      }
+    ]
+  }
 ]

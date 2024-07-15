@@ -1,4 +1,6 @@
-export const MAX_WORDS_PER_GAME = 7;
+export const MIN_WORDS_PER_GAME = 7;
+
+export const MAX_WORDS_PER_GAME = 9;
 
 export const MAX_CHARACTERS_PER_WORD = 8;
 

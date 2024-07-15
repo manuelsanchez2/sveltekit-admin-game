@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Tooltip } from 'flowbite-svelte';
-	import type { CoordinateI, GameI } from '../../types';
+	import type { GameI } from '$types';
 
 	export let selectedGame: GameI;
 

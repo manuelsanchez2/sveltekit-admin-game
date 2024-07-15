@@ -2,16 +2,20 @@
 	import { goto } from '$app/navigation';
 	import '$lib/styles/app.css';
 	import { onMount } from 'svelte';
-	import GAMES from '$db/games.json';
 	import { getGameById } from '$db/queries';
-
 	import CharacterGridGame from '$components/character-grid/CharacterGridGame.svelte';
+	import type { GameI } from '$types';
+	import CharacterGridSkeleton from '$components/character-grid/CharacterGridSkeleton.svelte';
+	export let data;
+	if (!data) {
+		throw new Error('No data provided');
+	}
+	const { games } = data;
 
-	const games = GAMES;
 	let isMounted = false;
 
 	let selectedGameId: string;
-	let selectedGame;
+	let selectedGame: GameI | null | undefined = null;
 
 	onMount(() => {
 		const urlParams = new URLSearchParams(window.location.search);
@@ -19,7 +23,7 @@
 		if (gameIdParam) {
 			selectedGameId = gameIdParam;
 		} else {
-			selectedGameId = GAMES[0].id;
+			selectedGameId = games[0].id;
 		}
 		isMounted = true;
 	});
@@ -28,7 +32,9 @@
 		goto(`/?gameId=${gameId}`, { replaceState: true });
 	}
 
-	$: selectedGame = getGameById(selectedGameId);
+	$: if (isMounted && selectedGameId !== null) {
+		selectedGame = getGameById(games, selectedGameId);
+	}
 
 	$: if (selectedGameId !== null) {
 		if (isMounted) updateUrl(selectedGameId);
@@ -75,10 +81,10 @@
 	<small class="mb-8">Not playable yet, we are working on it!</small>
 
 	{#if selectedGame !== null && selectedGame !== undefined}
-		<div>
-			<!-- // It should read not the debug, but the final one with the coordinates set and gneerated  -->
-			<CharacterGridGame {selectedGame} />
-		</div>
+		<!-- // It should read not the debug, but the final one with the coordinates set and gneerated  -->
+		<CharacterGridGame {selectedGame} />
+	{:else}
+		<CharacterGridSkeleton />
 	{/if}
 </main>
 
