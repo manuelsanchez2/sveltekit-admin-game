@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Button, Modal, Label, Input, Checkbox } from 'flowbite-svelte';
+	import { Button, Modal, Label, Input, Checkbox, Tooltip, Table } from 'flowbite-svelte';
 	import GAMES from '$db/games.json';
 	import type { GameI } from '$types';
 
@@ -22,6 +22,9 @@
 	} from 'flowbite-svelte';
 	import { debounce, highlightMatch, transformedPublishedData } from '$utils';
 	import { addToast } from '$stores/toasts';
+	import { MultiSelect } from 'svelte-multiselect';
+	import { MAX_CHARACTERS_PER_GAME, MAX_WORDS_PER_GAME, MIN_WORDS_PER_GAME } from '$constants';
+	import MultiselectOption from '$components/multiselect-option/MultiselectOption.svelte';
 
 	let searchTerm = '';
 	let debouncedSearchTerm = '';
@@ -50,6 +53,7 @@
 		selectGameModal = true;
 		selectedGameToEdit = items.find((item) => item.id === id) as GameI;
 		mutableCopyOfSelectedGame = { ...selectedGameToEdit };
+		handleWordsChange();
 	}
 
 	const handleSearch = debounce((value: string) => {
@@ -81,7 +85,7 @@
 		const date = data.get('date');
 		const isActive = mutableCopyOfSelectedGame ? mutableCopyOfSelectedGame.isActive : false;
 
-		console.log({ gameId, name, date, isActive });
+		// console.log({ gameId, name, date, isActive });
 
 		try {
 			const response = await fetch(`/api/games/${gameId}`, {
@@ -134,6 +138,29 @@
 			dismissible: true,
 			timeout: 3000
 		});
+	}
+
+	// onMount(() => {
+	// 	selectGame('37ac5a8e-2e12-44f6-8b19-1e539d2b4c19');
+	// 	console.log({ mutableCopyOfSelectedGame });
+	// });
+
+	$: totalNumberOfCharacters = 0;
+	let numberClass = 'text-red-600';
+
+	function updateTotalNumberOfCharacters(selectedWords: string[]) {
+		selectedWords.map((word) => word.toUpperCase());
+		// console.log({ selectedWords });
+		totalNumberOfCharacters = selectedWords.reduce((acc, word) => acc + word.length, 0);
+		numberClass =
+			totalNumberOfCharacters === MAX_CHARACTERS_PER_GAME ? 'text-green-600' : 'text-red-600';
+	}
+
+	function handleWordsChange() {
+		// Convert the selected words to uppercase
+		if (!mutableCopyOfSelectedGame) return;
+		mutableCopyOfSelectedGame.words.map((word) => word.toUpperCase());
+		updateTotalNumberOfCharacters(mutableCopyOfSelectedGame.words);
 	}
 </script>
 
@@ -262,6 +289,7 @@
 		</TableSearch>
 	</div>
 
+	<!-- // Modal Create  -->
 	{#if data.isLoggedIn === 'true'}
 		<Modal bind:open={newGameModal} size="xs" class="w-full" autoclose outsideclose>
 			<form class="flex flex-col space-y-6" action="#">
@@ -283,8 +311,9 @@
 		</Modal>
 	{/if}
 
+	<!-- // Modal Edit  -->
 	{#if selectedGameToEdit && mutableCopyOfSelectedGame}
-		<Modal bind:open={selectGameModal} size="xs" class="w-full" outsideclose>
+		<Modal bind:open={selectGameModal} size="lg" class="w-full" outsideclose>
 			<form on:submit|preventDefault={editGame} class="flex flex-col space-y-6">
 				<h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Edit game</h3>
 				<Label class="space-y-2">
@@ -314,6 +343,90 @@
 
 				<input name="gameId" hidden type="text" value={mutableCopyOfSelectedGame.id} />
 
+				<div class="flex flex-col gap-2">
+					<Label class="flex gap-2 items-center justify-between" for="words">
+						<span>Current words:</span>
+
+						<div>
+							N◦. of words:
+							<span
+								class={`${
+									mutableCopyOfSelectedGame.words.length >= MIN_WORDS_PER_GAME &&
+									mutableCopyOfSelectedGame.words.length < MAX_WORDS_PER_GAME
+										? 'text-green-600'
+										: 'text-red-600'
+								}`}>{mutableCopyOfSelectedGame.words.length}/{MAX_WORDS_PER_GAME}</span
+							>
+						</div>
+						<Tooltip>
+							<p>
+								Please make sure you have exactly between <strong
+									>{MIN_WORDS_PER_GAME} and {MAX_WORDS_PER_GAME} words</strong
+								>.
+							</p>
+						</Tooltip>
+					</Label>
+
+					<MultiSelect
+						id="words"
+						options={mutableCopyOfSelectedGame.words}
+						placeholder="Choose or write some words..."
+						allowUserOptions="append"
+						maxSelect={MAX_WORDS_PER_GAME}
+						bind:selected={mutableCopyOfSelectedGame.words}
+						on:change={() => {
+							handleWordsChange();
+						}}
+						on:remove={() => {
+							// TODO: fix
+							handleWordsChange();
+						}}
+						required
+					>
+						<MultiselectOption let:idx {idx} let:option {option} slot="selected" />
+						<MultiselectOption let:idx {idx} let:option {option} slot="option" />
+					</MultiSelect>
+
+					<span aria-live="polite"
+						>Total number of characters: <span class={numberClass}
+							>{totalNumberOfCharacters} / 48</span
+						></span
+					>
+				</div>
+
+				<TableSearch
+					placeholder="Search by letter, final word..."
+					divClass="w-full rounded-md"
+					hoverable={true}
+				>
+					<TableHead>
+						<TableHeadCell>ID</TableHeadCell>
+						<TableHeadCell>Letter</TableHeadCell>
+						<TableHeadCell>CoordinateX</TableHeadCell>
+						<TableHeadCell>CoordinateY</TableHeadCell>
+						<TableHeadCell>Final Word</TableHeadCell>
+					</TableHead>
+					<TableBody tableBodyClass="divide-y">
+						{#if mutableCopyOfSelectedGame.lettersCoordinates.length > 0}
+							{#each mutableCopyOfSelectedGame.lettersCoordinates as item}
+								<TableBodyRow class="border">
+									<TableBodyCell>{item.id}</TableBodyCell>
+									<TableBodyCell>{item.letter}</TableBodyCell>
+									<TableBodyCell>{item.coordinateX}</TableBodyCell>
+									<TableBodyCell>{item.coordinateY}</TableBodyCell>
+									<TableBodyCell>{item.word}</TableBodyCell>
+								</TableBodyRow>
+							{/each}
+						{:else}
+							<TableBodyRow>
+								<TableBodyCell colspan="5" class="text-center"
+									>No letter search match your criteria.</TableBodyCell
+								>
+							</TableBodyRow>
+						{/if}
+					</TableBody>
+				</TableSearch>
+
 				<div class="flex items-center gap-3">
 					<Button
 						on:click={() => {
@@ -329,6 +442,7 @@
 		</Modal>
 	{/if}
 
+	<!-- // Modal Delete  -->
 	{#if deleteGameModal && mutableCopyOfSelectedGame}
 		<Modal bind:open={deleteGameModal} size="xs" class="w-full" outsideclose>
 			<p>

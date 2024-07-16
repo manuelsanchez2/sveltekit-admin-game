@@ -13,7 +13,7 @@
 		'BEAUTIFUL',
 		'DEVELOPMENT',
 		'WATER',
-		'zebra'
+		'ZEBRA'
 	];
 
 	let showGrid = false;
